@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#171923">
+<title>NPC Headquarters</title>
+<meta name="description" content="Discover NPC Headquarters and Naruto Shinobi Community. Explore each community's description and purpose.">
+<style>
+:root{--bg:#171923;--panel:#202331;--panel2:#272b3b;--text:#f1f2f7;--muted:#b0b5c5;--purple:#ad9eff;--teal:#8dd8d0;--line:rgba(255,255,255,.1)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);background:radial-gradient(ellipse at 12% 0%,#39334f 0,transparent 38%),radial-gradient(ellipse at 100% 35%,#244047 0,transparent 32%),var(--bg);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1050px,calc(100% - 36px));margin:auto}
+header{padding:22px 0;display:flex;justify-content:space-between;align-items:center;gap:20px}.brand{font-weight:900;letter-spacing:.12em}.brand span{color:var(--purple)}nav{display:flex;gap:20px;color:var(--muted);font-size:.92rem}nav a:hover{color:white}
+.hero{padding:90px 0 76px;min-height:440px;display:flex;flex-direction:column;justify-content:center}.eyebrow{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;font-weight:800;color:var(--teal)}
+h1{font-size:clamp(3rem,8vw,6rem);line-height:.98;letter-spacing:-.06em;margin:18px 0;max-width:850px}h1 span{color:var(--purple)}h2{font-size:clamp(1.8rem,4vw,2.7rem);letter-spacing:-.04em;margin:8px 0 12px}
+.lead,.intro{color:var(--muted);max-width:680px}.lead{font-size:1.08rem}.section{padding:58px 0}.intro{margin:0 0 26px}
+.panel{background:linear-gradient(145deg,rgba(255,255,255,.065),rgba(255,255,255,.025));border:1px solid var(--line);border-radius:20px;padding:25px}
+.choices{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.choice{display:flex;flex-direction:column;gap:15px;min-height:270px}.choice h3{font-size:1.4rem;margin:5px 0}.choice p{color:var(--muted);margin:0}.number{color:var(--purple);font-weight:900;letter-spacing:.12em;font-size:.78rem}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto}.btn{border:1px solid var(--line);background:rgba(255,255,255,.045);color:var(--text);padding:11px 16px;border-radius:11px;font-weight:750;cursor:pointer;font:inherit;font-size:.9rem;display:inline-flex;align-items:center;justify-content:center;transition:.2s}.btn:hover{transform:translateY(-2px);border-color:rgba(173,158,255,.6)}.btn.primary{background:var(--purple);color:#19172a;border-color:transparent}.btn.active{background:var(--panel2);border-color:var(--purple);color:var(--purple)}
+.details{margin-top:18px;display:none;padding:20px;border:1px solid var(--line);border-radius:15px;background:rgba(15,17,26,.48)}.details.show{display:block}.details h4{margin:0 0 7px;font-size:1.08rem}.details p{margin:0;color:var(--muted)}.details .purpose{margin-top:15px}
+footer{border-top:1px solid var(--line);margin-top:45px;padding:24px 0 32px;color:var(--muted);font-size:.88rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:700px){.choices{grid-template-columns:1fr}header{align-items:flex-start;flex-direction:column}nav{gap:14px;flex-wrap:wrap}.hero{padding:65px 0 45px}.section{padding:42px 0}}
+</style>
+</head>
+<body>
+<header class="wrap">
+<a class="brand" href="#home">NPC <span>HEADQUARTERS</span></a>
+<nav><a href="#home">Home</a><a href="#communities">Communities</a><a href="#about">About</a></nav>
+</header>
+<main>
+<section class="hero wrap" id="home">
+<div class="eyebrow">Choose your community</div>
+<h1>WELCOME TO<br><span>THE HEADQUARTERS.</span></h1>
+<p class="lead">Two communities. Two different experiences. Choose the one you want to explore, then open its description or learn what its purpose is.</p>
+</section>
+
+<section class="section wrap" id="communities">
+<div class="eyebrow">01 / Explore</div>
+<h2>Choose an option.</h2>
+<p class="intro">Select either community below. Each one has its own description and purpose, so you can understand what it offers before joining.</p>
+
+<div class="choices">
+<article class="panel choice" id="community-one">
+<div>
+<div class="number">OPTION 01</div>
+<h3>NPC Headquarters</h3>
+<p>General community • Conversations • Fandoms</p>
+</div>
+<div class="actions">
+<button class="btn" onclick="showInfo('one','description',this)">Description</button>
+<button class="btn" onclick="showInfo('one','purpose',this)">Purpose</button>
+<a class="btn primary" href="https://t.me/NPCHEADQUARTERS1038" target="_blank" rel="noopener">Join group ↗</a>
+</div>
+<div class="details" id="one-description">
+<h4>About NPC Headquarters</h4>
+<p>NPC Headquarters is a friendly Telegram community where members can chat, meet new people, share interests, talk about anime and other fictional worlds, and create memorable moments together. It is a place for community interaction, fun conversations, and making new connections.</p>
+</div>
+<div class="details" id="one-purpose">
+<h4>What is its purpose?</h4>
+<p>The purpose of NPC Headquarters is to bring people together in one active community. Members can discuss their interests, take part in conversations, share ideas, enjoy group activities, and build a welcoming space where everyone can feel included.</p>
+</div>
+</article>
+
+<article class="panel choice" id="community-two">
+<div>
+<div class="number">OPTION 02</div>
+<h3>Naruto Shinobi Community</h3>
+<p>Naruto universe • Shinobi • Anime discussions</p>
+</div>
+<div class="actions">
+<button class="btn" onclick="showInfo('two','description',this)">Description</button>
+<button class="btn" onclick="showInfo('two','purpose',this)">Purpose</button>
+<a class="btn primary" href="https://t.me/Naruto_Shinobi_Community" target="_blank" rel="noopener">Join group ↗</a>
+</div>
+<div class="details" id="two-description">
+<h4>About Naruto Shinobi Community</h4>
+<p>Naruto Shinobi Community is a Telegram group for fans of the Naruto universe. It is a place to connect with fellow shinobi fans and talk about Naruto, its characters, clans, abilities, battles, story arcs, and favourite moments.</p>
+</div>
+<div class="details" id="two-purpose">
+<h4>What is its purpose?</h4>
+<p>The purpose of Naruto Shinobi Community is to bring Naruto fans together. Members can share their knowledge and opinions, discuss characters and techniques, debate matchups, exchange fan content, and enjoy the Naruto universe with other fans.</p>
+</div>
+</article>
+</div>
+</section>
+
+<section class="section wrap" id="about">
+<div class="panel">
+<div class="eyebrow">02 / A quick note</div>
+<h2>Find the community that fits you.</h2>
+<p class="intro" style="margin-bottom:0">Choose NPC Headquarters for a broader community experience, or Naruto Shinobi Community if you mainly want Naruto-focused discussions. You can explore both before deciding which one to join.</p>
+</div>
+</section>
+</main>
+<footer class="wrap"><span>© 2026 NPC Headquarters</span><span>Made for the community.</span></footer>
+<script>
+function showInfo(group,type,button){
+  const card=document.getElementById('community-'+(group==='one'?'one':'two'));
+  const target=document.getElementById(group+'-'+type);
+  const wasOpen=target.classList.contains('show');
+  card.querySelectorAll('.details').forEach(el=>el.classList.remove('show'));
+  card.querySelectorAll('.actions .btn').forEach(el=>el.classList.remove('active'));
+  if(!wasOpen){target.classList.add('show');button.classList.add('active');}
+}
+</script>
+</body>
+</html>
